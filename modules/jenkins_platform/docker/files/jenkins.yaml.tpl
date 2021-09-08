@@ -1,5 +1,5 @@
 jenkins:
-    systemMessage: "Amazon Fargate Demo"
+    systemMessage: "Amazon Fargate"
     numExecutors: 0
     remotingSecurity:
       enabled: true
@@ -11,13 +11,6 @@ jenkins:
             users:
                 - id: ecsuser
                   password: \$${ADMIN_PWD}
-    authorizationStrategy:
-        globalMatrix:
-            grantedPermissions:
-                - "Overall/Read:authenticated"
-                - "Job/Read:authenticated"
-                - "View/Read:authenticated"
-                - "Overall/Administer:authenticated"
     crumbIssuer: "standard"
     slaveAgentPort: 50000
     clouds:

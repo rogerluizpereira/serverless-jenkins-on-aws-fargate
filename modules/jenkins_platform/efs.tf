@@ -3,7 +3,7 @@ resource "aws_efs_file_system" this {
   creation_token = "${var.name_prefix}-fs"
 
   encrypted                       = var.efs_enable_encryption
-  kms_key_id                      = var.efs_kms_key_arn
+  #kms_key_id                      = var.efs_kms_key_arn
   performance_mode                = var.efs_performance_mode
   throughput_mode                 = var.efs_throughput_mode
   provisioned_throughput_in_mibps = var.efs_provisioned_throughput_in_mibps

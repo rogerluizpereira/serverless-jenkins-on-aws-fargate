@@ -18,7 +18,7 @@ variable vpc_id {
 // EFS
 variable efs_enable_encryption {
   type    = bool
-  default = true
+  default = false
 }
 
 variable efs_kms_key_arn {

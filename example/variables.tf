@@ -42,3 +42,8 @@ variable alb_subnet_ids {
   description = "A list of subnets for the Application Load Balancer"
 #   default = ["subnet-5d12c221","subnet-2178df6d","subnet-29452043"]
 }
+
+variable efs_enable_encryption {
+  type    = bool
+  default = false
+}
